@@ -1,0 +1,933 @@
+@import"compass";
+@import url(https://fonts.googleapis.com/css?family=Lato:400,300italic,700,900);
+/***** CLEARFIX is applied to the parent of floated elements *************/
+/*************************************************************************/
+$darkgray: #464646;
+$lightgray: #ebebeb;
+$orange: #ff6d38;
+$red: #dc4126;
+$blue: #a0bbcf;
+$darkblue: #3a7aa9;
+
+
+.clearfix {
+    zoom: 1;
+    &:before, &:after {
+        content: "";
+        display: table;
+    }
+    &:after {
+        clear: both;
+    }
+}
+
+img{
+	display:block;
+	max-width:100%;
+	margin:0 auto;
+}
+
+a{
+	text-decoration:none;
+}
+input{
+	max-width:90%;
+	margin:0 auto;
+}
+select{
+	max-width:50%;
+}
+
+#hide{
+		color:$orange;
+		font-size:1.5em;
+		font-weight:bolder;
+	}
+
+.maincontentbox nav .active{
+	
+	color: white;
+	padding-bottom:10px;
+	padding-top:10px;
+	margin-top:15px;
+	border:2px solid $orange;
+}
+
+.orangebutton{
+	padding: 10px 10%;
+	font-size:.8em;
+	color:white;
+	text-align:center;	
+	text-decoration:none;
+	background:$orange;
+	@include transition (background 0.3s);
+		a{
+			color:$orange;
+		}
+
+	&:hover{
+		background: $red;
+		color:white;
+	}
+}
+
+.orangeoutline{
+	padding: 4%;
+	color:white;
+	text-align:center;	
+	text-decoration:none;
+	border:2px solid $orange;
+	@include transition (background 0.3s);
+		a{
+			color:$orange;
+		}
+
+	&:hover{
+		background: $red;
+	}
+}
+
+.orangefill{
+	padding: 4%;
+	color:white;
+	text-align:center;	
+	text-decoration:none;
+	background:$orange;
+	border:2px solid $orange;
+	@include transition (background 0.3s);
+		a{
+			color:$orange;
+		}
+
+	&:hover{
+		background: $red;
+	}
+}
+
+.bluebutton{
+	padding: 10px 10%;
+	max-height:50px;
+	color:white;
+	text-align:center;	
+	text-decoration:none;
+	background:$darkblue;
+	@include transition (background 0.3s);
+		a{
+			color:$orange;
+		}
+
+	&:hover{
+		background: #213f6c;
+		color:white;
+	}
+}
+
+.declinebutton{
+	background:#7e838b;
+	color:white
+		&:hover{
+				color:white;
+				background:#545658;
+		}
+		a{
+			color:white;
+		}
+}
+
+a{
+	text-decoration:none;
+}
+
+
+/***** SITE STYLES *************/
+/**********************************/
+
+
+	body{
+		background:url(../img/bg.jpg), $blue;
+		font-family: 'Lato', sans-serif;
+
+	}
+	header{
+		background:$darkgray;
+		padding-top:20px;
+		padding-bottom:20px;
+		margin-bottom:40px;
+			.layrlogo{
+				float:left;
+				width:40%;
+				max-width:150px;
+				margin-left:5%;
+				padding-top:16px;
+					img{
+						margin:0;
+					}
+			}
+			.available{
+				float:right;
+				width:40%;
+				margin-right:5%;
+				margin-top:10px;
+				color:white;
+				font-size:.8em;
+				text-align:right;
+				letter-spacing: 2px;
+				vertical-align:baseline;
+					.availablebutton{
+						padding:4%;
+						padding-right:0;
+						display:block;
+							a{
+								display:inline-block;
+								width:19%;
+							}		
+					}
+					.logout{
+						display:block;
+							a{
+								color:white;
+								text-decoration:underline;
+							}
+					}
+					h3{
+						font-size:.5em;
+						display:block;
+						margin-top:0;
+						margin-bottom:5px;
+					}
+			}
+			.layrheader{
+				display:block;
+				padding-top:20px;
+				color:white;
+				text-align:center;
+				font-size:.9em;
+				clear:both;
+					h1{
+						margin-top:0;
+						margin-bottom:10px;
+					}
+			}
+			
+	}
+
+	.wrapper{
+		width:90%;
+		max-width:800px;
+		margin:0 auto;
+	}
+
+	.desktoplayr{
+		display:none;
+	}
+
+	.maincontentbox{
+		background:$darkgray;
+		padding:5%;
+				ul{
+					display:block;
+					list-style:none;
+					padding:0;
+					margin:0;
+						li{
+							display:inline-block;
+							width:24%;
+							text-align:center;
+						}
+						a{
+							display:block;
+							color:white;
+							padding:10px,20px;
+							
+							
+								&:hover{
+										color:$orange;
+								}
+						}
+				}
+				.innercontent{
+								margin-top:10px;
+								box-shadow: 5px 5px 2px #2b2c2d;
+								h1{
+									display:block;
+									border-bottom:2px solid black;
+								}
+				}
+	}
+
+	
+
+	footer{
+		background:$darkgray;
+		color:$orange;
+		padding:30px 5%;		
+			ul{
+				display:block;
+				list-style:none;
+				padding:0;
+				display:block;
+				margin:0 auto;
+			}
+			li{
+				display:inline-block;
+				width:30%;
+				text-align:center;
+				vertical-align:top;		
+			}
+			a{
+				color:$orange;
+
+					&:hover{
+						color:white;
+					}
+			}
+	}
+
+
+	// ***  Mobile Styles
+
+	nav{
+		font-size:.75em;
+	}
+	// ***	Login Mobile
+
+
+	.maincontentbox{
+		margin-bottom:40px;
+		color:white;
+		padding-bottom:40px;
+			label{
+				display:block;
+				margin-bottom:5px;
+			}
+			input{
+				width:98%;
+				margin:10px auto;
+				color:black;
+			}
+			.loginbuttons{
+				display:block;	
+				margin-top:30px;
+					.loginsubmit{
+						float:left;
+						width:47%;
+					}
+					.loginforgotpassword{
+						float:right;
+						width:47%;
+					}
+					.orangebutton{
+						display:block;
+							&:hover{
+								background:$red;
+							}
+					}
+			}
+	}
+
+
+	// ***	Profile Mobile
+
+
+	.innercontent{
+		background:white;
+		padding:4% 4% 2% 4%;
+		color:$darkgray;
+	}
+
+	.profilepicture{
+			p{
+				margin-top:5px;
+			}
+			img{
+				border:2px solid $darkgray;
+				max-width:75%;
+				margin:20px auto;
+			}
+		
+			.pictureinput{
+				display:block;
+			}
+			.choosefile{
+				-webkit-appearance: none;
+				
+	    		border: none;
+	    		
+	    		
+	    		display:block;
+	    		max-width:100%;
+	    			&hover{
+	    				background-color:$red;
+	    			}
+			}
+	}
+
+	.profileinput{
+		margin-top:20px;
+			label{
+				margin-bottom:5px;
+			}
+			input{
+				margin-top:5px;
+			}
+			select{
+				margin:5px auto 15px auto;
+			}
+			.orangebutton{
+				padding:7px 10%;
+			}
+	}
+
+	.portfoliolinks{
+		color:$darkgray;
+		margin-top:20px;
+	}
+
+	.profilesubmit{
+		margin:10px 0;
+	}
+
+
+	// ***	History Mobile
+
+	th {
+    	text-align: left;
+    	padding-bottom:10px;
+    	font-size:1em;
+    	font-weight:bolder;
+	}
+	td{
+		padding:2% 0;
+		font-size:.8em;
+		color:$darkgray;
+
+			a{
+				color:$darkgray;
+				text-decoration:underline;
+				padding-left:5%;
+					&:hover{
+						color:$orange;
+					}
+			}
+	}
+	tr{
+		&.blue{
+			background-color: lighten( #c6d8f2, 10% );
+		}
+
+	}
+
+
+
+
+
+
+	.headings{
+		float:left;
+		width:35%;
+			ul{
+				li{
+					display:block;
+					margin-bottom:10px;
+					text-align:left;
+					width:100%;
+				}
+				.orangebutton{
+					max-width:50%;
+				}
+			}
+			tr{
+				line-height:1.5em;
+			}
+	}
+
+	.data{
+		float:left;
+		width:65%;
+			ul{
+				li{
+					display:block;
+					margin-bottom:10px;
+					text-align:left;
+					width:100%;
+				}
+			}
+	}
+
+	.additionalinformation{
+		background:white;
+		padding:4%;
+		margin-bottom:30px;
+		box-shadow:5px 5px 2px #68696a;
+
+
+			h1{
+				font-size:1.2em;
+				margin-top:10px;
+				padding-bottom:10px;
+				display:block;
+				border-bottom: 3px solid black;
+			}
+			.logoimage{
+				float:left;
+				width:20%;
+				margin-right:5%;
+			}
+			table{
+				font-size:.9em;
+			}
+			tr{
+				margin-bottom:15px;
+			}
+			th{
+				text-align:left;
+				
+			}
+			td{
+				padding-left:5%;
+			}
+	}
+
+
+	// *** Index / Projects Mobile
+
+
+	.projectinfo{
+		display:block;
+			.table_heads{
+				float:left;
+				width:50%;
+					li{
+						display:block;
+						width:100%;
+						text-align:left;
+							h3{
+								margin:0 0 20px 0;
+							}
+					}
+			}
+			.table_data{
+				float:left;
+				width:50%;
+					li{
+						display:block;
+						width:100%;
+						margin:0 0 25px 0;
+						text-align:left;
+					}
+			}
+	}
+
+	.projectbuttons{
+		display:block;
+		margin-bottom:40px;
+			ul{
+				display:block;
+					li{
+						display:inline-block;
+						width:32%;
+					}
+					a{
+						background:$orange;
+						padding:10px 10%;
+						margin-right:2%;
+							&:hover{
+									background: $red;
+									color:white;
+							}
+					}
+					.declinebutton{
+						background:#7e838b;
+							&:hover{
+									color:white;
+									background:$darkgray;
+							}
+					}
+			}
+	}
+
+	.additionalinformation{
+		color:$darkgray;
+		h1{
+			font-size:1.5em;
+		}
+			.overview{
+				background:$lightgray;
+				padding:4%;
+					h5{
+						font-size:1em;
+						margin-top:0;
+						margin-bottom:5px;
+					}
+			}
+			
+			ul{
+				list-style:none;
+				padding:0;
+			}
+			.overviewbuttons{
+				margin-top:25px;
+					label{
+						display:block;
+						margin-top:25px;
+					}
+					a{
+						padding:10px 4%;
+					}
+					.bluebutton{
+						display:block;
+						margin-top:25px;
+					}
+			}
+	}
+	.currentinformation{
+		background:white;
+		h1{
+			margin-top:15px;
+			font-size:1.5em;
+		}
+		padding:4%;
+		color:$darkgray;
+		margin-bottom:40px;
+		box-shadow: 5px 5px 2px #68696a;
+			#hide_current{
+				color:$orange;
+				font-size:1.5em;
+				font-weight:bolder;
+			}
+			
+			.currentstatus{
+				font-size:1.75em;
+				color:$orange;	
+			}
+			h5{
+				margin-bottom:5px;
+				margin-top:0;
+				font-size:1em;
+				font-weight:bold;
+				margin-top:0px;
+			}
+			ul{
+				list-style:none;
+				padding:0;
+			}
+			.message_author,.message_date{
+				color:$darkblue;
+			}
+			.messagereply{
+				background:$lightgray;
+				padding:4%;
+					.emailcopy{
+						margin-bottom:10px;
+							input{
+								height:15px;
+								display:inline-block;
+							}
+					}
+					input{
+						display:block;
+						height:80px;
+						width:100%;
+					}
+					.bluebutton{
+						max-height:50px;
+					}
+			}
+			.message_author{
+				margin-bottom:3px;
+			}
+			.message_date{
+				margin-top:3px;
+			}
+			.email_content{
+				margin-bottom:50px;
+			}
+			.message_artist{
+				margin-bottom:3px;
+			}
+	}
+
+
+	// ***	Billing Mobile
+
+
+	.billingbuttons{
+		text-align:center;
+		color:$darkgray;
+		margin-top:10px;
+			a{
+				color:$darkgray;
+				padding:20px 10%;
+					&:hover{
+						color:$orange;
+					}
+			}		
+			.echeckbutton{
+				float:left;
+				width:50%;
+				background:white;
+				padding:20px 0;
+			}
+			.paypalbutton{
+				float:left;
+				width:50%;
+				background:white;
+				padding:20px 0;
+			}
+			.graybackground{
+				background:$lightgray;
+				color:$darkgray;
+			}
+
+			.billingsave{
+				width:7%;
+			}	
+	}
+
+	.echeck{
+		background:white;
+		padding:4%;
+		color:$darkgray;
+			.orangebutton{
+				float:left;
+				width:25%;
+			}
+			img{
+				margin-top:20px;
+			}
+	}
+
+	.paypal{
+		background:white;
+		padding:4%;
+		padding-bottom:140px;
+		color:$darkgray;
+			select{
+				float:left;
+				display:block;
+				margin-bottom:20px;
+			}
+			.orangebutton{
+				width:25%;
+				float:right;
+				clear:both;
+			}
+	}
+
+
+.popover{
+	position: fixed;
+	// top: 0;
+	// left: 0;
+	// right: 0;
+	// bottom: 0;
+	overflow: scroll;
+	top:40px;
+	left:3%;
+	right:3%;
+	bottom:40px;
+	box-shadow: 5px 5px 2px rgba(0,0,0,0.3);
+		.close{
+			position: fixed;
+    		top: 55px;
+    		left: 92%;
+		}
+
+}
+
+
+@media screen and (min-width: 700px) {
+	
+
+	.maincontentbox{
+		padding-top:20px;
+	}
+	header{
+		padding-bottom:20px;
+			.headerlogo{
+				width:60%;
+					img{
+						// margin-top: 15px;
+					}	
+			}
+			.layrheader{
+				display:none;
+			}
+			.available{
+				margin-right:5%;
+				width:17%;
+					.availablebutton{
+						a{
+							width:35%;
+						}
+					}
+			}		
+	}
+
+	header{
+			.layrheader{
+				padding-top:5px;
+			}
+			h1{
+				padding-bottom:20px;
+			}
+	}
+
+	.maincontentbox{
+			nav{
+				font-size:1.2em;
+			}
+	}
+
+// ********* styles for login tablet
+	
+	.loginbox{
+		max-width:500px;
+		margin:0 auto 40px auto;
+	}
+
+	.loginbuttons{
+			.loginsubmit{
+				float:left;
+				width:45%;
+			}
+			.loginforgotpassword{
+				float:right;
+				width:45%;
+			}
+	}
+
+// ********** styles for profile tablet
+
+	.profilepicture{
+		padding:8%;
+		background:$darkgray;
+		border:none;
+		float:left;
+		width:36%;
+		padding:4%;
+
+			.choosefile{
+				color:white;
+			}
+			img{
+				max-width:100%;
+				margin:0 auto 20px auto;
+			}
+			p{
+				color:white;
+			}
+	}
+
+	.profileinput{
+		margin-top:0;
+		float:right;
+		width:50%;
+	}
+
+	.portfoliolinks{
+		
+		background:$darkgray;
+		color:white;
+		padding:4%;
+		margin-top:15px;		
+	}
+
+// ******** project tablet
+
+	.innercontent{
+		font-size:1em;
+			h1{
+				margin-top:0;
+			}
+	}
+
+	.currentcontent{
+		margin-top:15px;
+	}
+
+	.projectinfo{
+		float:left;
+		width:70%;
+			.table_heads{
+				float:left;
+				width:40%;
+					li{
+						h3{
+						margin-top:0px;
+						margin-bottom:16px;
+						}
+					}
+			}
+			.table_data{
+				float:left;
+				width: 60%;
+				margin-bottom:40px;
+					li{
+						margin-top:2px;
+						margin-bottom:20px;
+					}
+			}
+	}
+
+	.projectbuttons{
+		float:right;
+		width:25%;
+		margin-bottom:40px;
+			ul{
+				li{
+				display:block;
+				width:100%;
+				margin-bottom:15px;
+				}
+			}
+	}
+
+	.overviewbuttons{
+		padding:20px 0;
+			label{
+				padding-top:20px;
+			}
+			a{
+				padding:10px 4%;
+			}
+			.bluebutton{
+				width:24%;
+			}
+	}
+
+	.messagereply{
+			.bluebutton{
+				width:27%;
+			}
+	}
+
+// *** History Tablet
+
+	.tablecontent{
+		font-size:1em;
+			th{
+				width:28%;
+				text-align:left;
+				padding-right:3%;
+			}
+			td{
+				width:19%;
+				padding-right:3%;
+			}
+		}
+	}
+
+@media screen and (min-width: 900px) {
+
+
+}
+
+
+
+
+
+
+
+
+

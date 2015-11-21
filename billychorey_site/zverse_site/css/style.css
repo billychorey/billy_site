@@ -1,0 +1,1013 @@
+@import url(https://fonts.googleapis.com/css?family=Lato:400,300italic,700,900);
+/***** CLEARFIX is applied to the parent of floated elements *************/
+/*************************************************************************/
+/* line 13, ../scss/style.scss */
+.clearfix {
+  zoom: 1;
+}
+/* line 15, ../scss/style.scss */
+.clearfix:before, .clearfix:after {
+  content: "";
+  display: table;
+}
+/* line 19, ../scss/style.scss */
+.clearfix:after {
+  clear: both;
+}
+
+/* line 24, ../scss/style.scss */
+img {
+  display: block;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+/* line 30, ../scss/style.scss */
+a {
+  text-decoration: none;
+}
+
+/* line 33, ../scss/style.scss */
+input {
+  max-width: 90%;
+  margin: 0 auto;
+}
+
+/* line 37, ../scss/style.scss */
+select {
+  max-width: 50%;
+}
+
+/* line 41, ../scss/style.scss */
+#hide {
+  color: #ff6d38;
+  font-size: 1.5em;
+  font-weight: bolder;
+}
+
+/* line 47, ../scss/style.scss */
+.maincontentbox nav .active {
+  color: white;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  margin-top: 15px;
+  border: 2px solid #ff6d38;
+}
+
+/* line 56, ../scss/style.scss */
+.orangebutton {
+  padding: 10px 10%;
+  font-size: .8em;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  background: #ff6d38;
+  -moz-transition: background 0.3s;
+  -o-transition: background 0.3s;
+  -webkit-transition: background 0.3s;
+  transition: background 0.3s;
+}
+/* line 64, ../scss/style.scss */
+.orangebutton a {
+  color: #ff6d38;
+}
+/* line 68, ../scss/style.scss */
+.orangebutton:hover {
+  background: #dc4126;
+  color: white;
+}
+
+/* line 74, ../scss/style.scss */
+.orangeoutline {
+  padding: 4%;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  border: 2px solid #ff6d38;
+  -moz-transition: background 0.3s;
+  -o-transition: background 0.3s;
+  -webkit-transition: background 0.3s;
+  transition: background 0.3s;
+}
+/* line 81, ../scss/style.scss */
+.orangeoutline a {
+  color: #ff6d38;
+}
+/* line 85, ../scss/style.scss */
+.orangeoutline:hover {
+  background: #dc4126;
+}
+
+/* line 90, ../scss/style.scss */
+.orangefill {
+  padding: 4%;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  background: #ff6d38;
+  border: 2px solid #ff6d38;
+  -moz-transition: background 0.3s;
+  -o-transition: background 0.3s;
+  -webkit-transition: background 0.3s;
+  transition: background 0.3s;
+}
+/* line 98, ../scss/style.scss */
+.orangefill a {
+  color: #ff6d38;
+}
+/* line 102, ../scss/style.scss */
+.orangefill:hover {
+  background: #dc4126;
+}
+
+/* line 107, ../scss/style.scss */
+.bluebutton {
+  padding: 10px 10%;
+  max-height: 50px;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  background: #3a7aa9;
+  -moz-transition: background 0.3s;
+  -o-transition: background 0.3s;
+  -webkit-transition: background 0.3s;
+  transition: background 0.3s;
+}
+/* line 115, ../scss/style.scss */
+.bluebutton a {
+  color: #ff6d38;
+}
+/* line 119, ../scss/style.scss */
+.bluebutton:hover {
+  background: #213f6c;
+  color: white;
+}
+
+/* line 125, ../scss/style.scss */
+.declinebutton {
+  background: #7e838b;
+}
+/* line 127, ../scss/style.scss */
+color:white
+.declinebutton:hover {
+  color: white;
+  background: #545658;
+}
+/* line 132, ../scss/style.scss */
+.declinebutton a {
+  color: white;
+}
+
+/* line 137, ../scss/style.scss */
+a {
+  text-decoration: none;
+}
+
+/***** SITE STYLES *************/
+/**********************************/
+/* line 146, ../scss/style.scss */
+body {
+  background: url(../img/bg.jpg), #a0bbcf;
+  font-family: 'Lato', sans-serif;
+}
+
+/* line 151, ../scss/style.scss */
+header {
+  background: #464646;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin-bottom: 40px;
+}
+/* line 156, ../scss/style.scss */
+header .layrlogo {
+  float: left;
+  width: 40%;
+  max-width: 150px;
+  margin-left: 5%;
+  padding-top: 16px;
+}
+/* line 162, ../scss/style.scss */
+header .layrlogo img {
+  margin: 0;
+}
+/* line 166, ../scss/style.scss */
+header .available {
+  float: right;
+  width: 40%;
+  margin-right: 5%;
+  margin-top: 10px;
+  color: white;
+  font-size: .8em;
+  text-align: right;
+  letter-spacing: 2px;
+  vertical-align: baseline;
+}
+/* line 176, ../scss/style.scss */
+header .available .availablebutton {
+  padding: 4%;
+  padding-right: 0;
+  display: block;
+}
+/* line 180, ../scss/style.scss */
+header .available .availablebutton a {
+  display: inline-block;
+  width: 19%;
+}
+/* line 185, ../scss/style.scss */
+header .available .logout {
+  display: block;
+}
+/* line 187, ../scss/style.scss */
+header .available .logout a {
+  color: white;
+  text-decoration: underline;
+}
+/* line 192, ../scss/style.scss */
+header .available h3 {
+  font-size: .5em;
+  display: block;
+  margin-top: 0;
+  margin-bottom: 5px;
+}
+/* line 199, ../scss/style.scss */
+header .layrheader {
+  display: block;
+  padding-top: 20px;
+  color: white;
+  text-align: center;
+  font-size: .9em;
+  clear: both;
+}
+/* line 206, ../scss/style.scss */
+header .layrheader h1 {
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+/* line 214, ../scss/style.scss */
+.wrapper {
+  width: 90%;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* line 220, ../scss/style.scss */
+.desktoplayr {
+  display: none;
+}
+
+/* line 224, ../scss/style.scss */
+.maincontentbox {
+  background: #464646;
+  padding: 5%;
+}
+/* line 227, ../scss/style.scss */
+.maincontentbox ul {
+  display: block;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+/* line 232, ../scss/style.scss */
+.maincontentbox ul li {
+  display: inline-block;
+  width: 24%;
+  text-align: center;
+}
+/* line 237, ../scss/style.scss */
+.maincontentbox ul a {
+  display: block;
+  color: white;
+  padding: 10px,20px;
+}
+/* line 243, ../scss/style.scss */
+.maincontentbox ul a:hover {
+  color: #ff6d38;
+}
+/* line 248, ../scss/style.scss */
+.maincontentbox .innercontent {
+  margin-top: 10px;
+  box-shadow: 5px 5px 2px #2b2c2d;
+}
+/* line 251, ../scss/style.scss */
+.maincontentbox .innercontent h1 {
+  display: block;
+  border-bottom: 2px solid black;
+}
+
+/* line 260, ../scss/style.scss */
+footer {
+  background: #464646;
+  color: #ff6d38;
+  padding: 30px 5%;
+}
+/* line 264, ../scss/style.scss */
+footer ul {
+  display: block;
+  list-style: none;
+  padding: 0;
+  display: block;
+  margin: 0 auto;
+}
+/* line 271, ../scss/style.scss */
+footer li {
+  display: inline-block;
+  width: 30%;
+  text-align: center;
+  vertical-align: top;
+}
+/* line 277, ../scss/style.scss */
+footer a {
+  color: #ff6d38;
+}
+/* line 280, ../scss/style.scss */
+footer a:hover {
+  color: white;
+}
+
+/* line 289, ../scss/style.scss */
+nav {
+  font-size: .75em;
+}
+
+/* line 295, ../scss/style.scss */
+.maincontentbox {
+  margin-bottom: 40px;
+  color: white;
+  padding-bottom: 40px;
+}
+/* line 299, ../scss/style.scss */
+.maincontentbox label {
+  display: block;
+  margin-bottom: 5px;
+}
+/* line 303, ../scss/style.scss */
+.maincontentbox input {
+  width: 98%;
+  margin: 10px auto;
+  color: black;
+}
+/* line 308, ../scss/style.scss */
+.maincontentbox .loginbuttons {
+  display: block;
+  margin-top: 30px;
+}
+/* line 311, ../scss/style.scss */
+.maincontentbox .loginbuttons .loginsubmit {
+  float: left;
+  width: 47%;
+}
+/* line 315, ../scss/style.scss */
+.maincontentbox .loginbuttons .loginforgotpassword {
+  float: right;
+  width: 47%;
+}
+/* line 319, ../scss/style.scss */
+.maincontentbox .loginbuttons .orangebutton {
+  display: block;
+}
+/* line 321, ../scss/style.scss */
+.maincontentbox .loginbuttons .orangebutton:hover {
+  background: #dc4126;
+}
+
+/* line 332, ../scss/style.scss */
+.innercontent {
+  background: white;
+  padding: 4% 4% 2% 4%;
+  color: #464646;
+}
+
+/* line 339, ../scss/style.scss */
+.profilepicture p {
+  margin-top: 5px;
+}
+/* line 342, ../scss/style.scss */
+.profilepicture img {
+  border: 2px solid #464646;
+  max-width: 75%;
+  margin: 20px auto;
+}
+/* line 348, ../scss/style.scss */
+.profilepicture .pictureinput {
+  display: block;
+}
+/* line 351, ../scss/style.scss */
+.profilepicture .choosefile {
+  -webkit-appearance: none;
+  border: none;
+  display: block;
+  max-width: 100%;
+}
+/* line 359, ../scss/style.scss */
+.profilepicture .choosefilehover {
+  background-color: #dc4126;
+}
+
+/* line 365, ../scss/style.scss */
+.profileinput {
+  margin-top: 20px;
+}
+/* line 367, ../scss/style.scss */
+.profileinput label {
+  margin-bottom: 5px;
+}
+/* line 370, ../scss/style.scss */
+.profileinput input {
+  margin-top: 5px;
+}
+/* line 373, ../scss/style.scss */
+.profileinput select {
+  margin: 5px auto 15px auto;
+}
+/* line 376, ../scss/style.scss */
+.profileinput .orangebutton {
+  padding: 7px 10%;
+}
+
+/* line 381, ../scss/style.scss */
+.portfoliolinks {
+  color: #464646;
+  margin-top: 20px;
+}
+
+/* line 386, ../scss/style.scss */
+.profilesubmit {
+  margin: 10px 0;
+}
+
+/* line 393, ../scss/style.scss */
+th {
+  text-align: left;
+  padding-bottom: 10px;
+  font-size: 1em;
+  font-weight: bolder;
+}
+
+/* line 399, ../scss/style.scss */
+td {
+  padding: 2% 0;
+  font-size: .8em;
+  color: #464646;
+}
+/* line 404, ../scss/style.scss */
+td a {
+  color: #464646;
+  text-decoration: underline;
+  padding-left: 5%;
+}
+/* line 408, ../scss/style.scss */
+td a:hover {
+  color: #ff6d38;
+}
+
+/* line 414, ../scss/style.scss */
+tr.blue {
+  background-color: #f0f4fb;
+}
+
+/* line 425, ../scss/style.scss */
+.headings {
+  float: left;
+  width: 35%;
+}
+/* line 429, ../scss/style.scss */
+.headings ul li {
+  display: block;
+  margin-bottom: 10px;
+  text-align: left;
+  width: 100%;
+}
+/* line 435, ../scss/style.scss */
+.headings ul .orangebutton {
+  max-width: 50%;
+}
+/* line 439, ../scss/style.scss */
+.headings tr {
+  line-height: 1.5em;
+}
+
+/* line 444, ../scss/style.scss */
+.data {
+  float: left;
+  width: 65%;
+}
+/* line 448, ../scss/style.scss */
+.data ul li {
+  display: block;
+  margin-bottom: 10px;
+  text-align: left;
+  width: 100%;
+}
+
+/* line 457, ../scss/style.scss */
+.additionalinformation {
+  background: white;
+  padding: 4%;
+  margin-bottom: 30px;
+  box-shadow: 5px 5px 2px #68696a;
+}
+/* line 464, ../scss/style.scss */
+.additionalinformation h1 {
+  font-size: 1.2em;
+  margin-top: 10px;
+  padding-bottom: 10px;
+  display: block;
+  border-bottom: 3px solid black;
+}
+/* line 471, ../scss/style.scss */
+.additionalinformation .logoimage {
+  float: left;
+  width: 20%;
+  margin-right: 5%;
+}
+/* line 476, ../scss/style.scss */
+.additionalinformation table {
+  font-size: .9em;
+}
+/* line 479, ../scss/style.scss */
+.additionalinformation tr {
+  margin-bottom: 15px;
+}
+/* line 482, ../scss/style.scss */
+.additionalinformation th {
+  text-align: left;
+}
+/* line 486, ../scss/style.scss */
+.additionalinformation td {
+  padding-left: 5%;
+}
+
+/* line 495, ../scss/style.scss */
+.projectinfo {
+  display: block;
+}
+/* line 497, ../scss/style.scss */
+.projectinfo .table_heads {
+  float: left;
+  width: 50%;
+}
+/* line 500, ../scss/style.scss */
+.projectinfo .table_heads li {
+  display: block;
+  width: 100%;
+  text-align: left;
+}
+/* line 504, ../scss/style.scss */
+.projectinfo .table_heads li h3 {
+  margin: 0 0 20px 0;
+}
+/* line 509, ../scss/style.scss */
+.projectinfo .table_data {
+  float: left;
+  width: 50%;
+}
+/* line 512, ../scss/style.scss */
+.projectinfo .table_data li {
+  display: block;
+  width: 100%;
+  margin: 0 0 25px 0;
+  text-align: left;
+}
+
+/* line 521, ../scss/style.scss */
+.projectbuttons {
+  display: block;
+  margin-bottom: 40px;
+}
+/* line 524, ../scss/style.scss */
+.projectbuttons ul {
+  display: block;
+}
+/* line 526, ../scss/style.scss */
+.projectbuttons ul li {
+  display: inline-block;
+  width: 32%;
+}
+/* line 530, ../scss/style.scss */
+.projectbuttons ul a {
+  background: #ff6d38;
+  padding: 10px 10%;
+  margin-right: 2%;
+}
+/* line 534, ../scss/style.scss */
+.projectbuttons ul a:hover {
+  background: #dc4126;
+  color: white;
+}
+/* line 539, ../scss/style.scss */
+.projectbuttons ul .declinebutton {
+  background: #7e838b;
+}
+/* line 541, ../scss/style.scss */
+.projectbuttons ul .declinebutton:hover {
+  color: white;
+  background: #464646;
+}
+
+/* line 549, ../scss/style.scss */
+.additionalinformation {
+  color: #464646;
+}
+/* line 551, ../scss/style.scss */
+.additionalinformation h1 {
+  font-size: 1.5em;
+}
+/* line 554, ../scss/style.scss */
+.additionalinformation .overview {
+  background: #ebebeb;
+  padding: 4%;
+}
+/* line 557, ../scss/style.scss */
+.additionalinformation .overview h5 {
+  font-size: 1em;
+  margin-top: 0;
+  margin-bottom: 5px;
+}
+/* line 564, ../scss/style.scss */
+.additionalinformation ul {
+  list-style: none;
+  padding: 0;
+}
+/* line 568, ../scss/style.scss */
+.additionalinformation .overviewbuttons {
+  margin-top: 25px;
+}
+/* line 570, ../scss/style.scss */
+.additionalinformation .overviewbuttons label {
+  display: block;
+  margin-top: 25px;
+}
+/* line 574, ../scss/style.scss */
+.additionalinformation .overviewbuttons a {
+  padding: 10px 4%;
+}
+/* line 577, ../scss/style.scss */
+.additionalinformation .overviewbuttons .bluebutton {
+  display: block;
+  margin-top: 25px;
+}
+
+/* line 583, ../scss/style.scss */
+.currentinformation {
+  background: white;
+  padding: 4%;
+  color: #464646;
+  margin-bottom: 40px;
+  box-shadow: 5px 5px 2px #68696a;
+}
+/* line 585, ../scss/style.scss */
+.currentinformation h1 {
+  margin-top: 15px;
+  font-size: 1.5em;
+}
+/* line 593, ../scss/style.scss */
+.currentinformation #hide_current {
+  color: #ff6d38;
+  font-size: 1.5em;
+  font-weight: bolder;
+}
+/* line 599, ../scss/style.scss */
+.currentinformation .currentstatus {
+  font-size: 1.75em;
+  color: #ff6d38;
+}
+/* line 603, ../scss/style.scss */
+.currentinformation h5 {
+  margin-bottom: 5px;
+  margin-top: 0;
+  font-size: 1em;
+  font-weight: bold;
+  margin-top: 0px;
+}
+/* line 610, ../scss/style.scss */
+.currentinformation ul {
+  list-style: none;
+  padding: 0;
+}
+/* line 614, ../scss/style.scss */
+.currentinformation .message_author, .currentinformation .message_date {
+  color: #3a7aa9;
+}
+/* line 617, ../scss/style.scss */
+.currentinformation .messagereply {
+  background: #ebebeb;
+  padding: 4%;
+}
+/* line 620, ../scss/style.scss */
+.currentinformation .messagereply .emailcopy {
+  margin-bottom: 10px;
+}
+/* line 622, ../scss/style.scss */
+.currentinformation .messagereply .emailcopy input {
+  height: 15px;
+  display: inline-block;
+}
+/* line 627, ../scss/style.scss */
+.currentinformation .messagereply input {
+  display: block;
+  height: 80px;
+  width: 100%;
+}
+/* line 632, ../scss/style.scss */
+.currentinformation .messagereply .bluebutton {
+  max-height: 50px;
+}
+/* line 636, ../scss/style.scss */
+.currentinformation .message_author {
+  margin-bottom: 3px;
+}
+/* line 639, ../scss/style.scss */
+.currentinformation .message_date {
+  margin-top: 3px;
+}
+/* line 642, ../scss/style.scss */
+.currentinformation .email_content {
+  margin-bottom: 50px;
+}
+/* line 645, ../scss/style.scss */
+.currentinformation .message_artist {
+  margin-bottom: 3px;
+}
+
+/* line 654, ../scss/style.scss */
+.billingbuttons {
+  text-align: center;
+  color: #464646;
+  margin-top: 10px;
+}
+/* line 658, ../scss/style.scss */
+.billingbuttons a {
+  color: #464646;
+  padding: 20px 10%;
+}
+/* line 661, ../scss/style.scss */
+.billingbuttons a:hover {
+  color: #ff6d38;
+}
+/* line 665, ../scss/style.scss */
+.billingbuttons .echeckbutton {
+  float: left;
+  width: 50%;
+  background: white;
+  padding: 20px 0;
+}
+/* line 671, ../scss/style.scss */
+.billingbuttons .paypalbutton {
+  float: left;
+  width: 50%;
+  background: white;
+  padding: 20px 0;
+}
+/* line 677, ../scss/style.scss */
+.billingbuttons .graybackground {
+  background: #ebebeb;
+  color: #464646;
+}
+/* line 682, ../scss/style.scss */
+.billingbuttons .billingsave {
+  width: 7%;
+}
+
+/* line 687, ../scss/style.scss */
+.echeck {
+  background: white;
+  padding: 4%;
+  color: #464646;
+}
+/* line 691, ../scss/style.scss */
+.echeck .orangebutton {
+  float: left;
+  width: 25%;
+}
+/* line 695, ../scss/style.scss */
+.echeck img {
+  margin-top: 20px;
+}
+
+/* line 700, ../scss/style.scss */
+.paypal {
+  background: white;
+  padding: 4%;
+  padding-bottom: 140px;
+  color: #464646;
+}
+/* line 705, ../scss/style.scss */
+.paypal select {
+  float: left;
+  display: block;
+  margin-bottom: 20px;
+}
+/* line 710, ../scss/style.scss */
+.paypal .orangebutton {
+  width: 25%;
+  float: right;
+  clear: both;
+}
+
+/* line 718, ../scss/style.scss */
+.popover {
+  position: fixed;
+  overflow: scroll;
+  top: 40px;
+  left: 3%;
+  right: 3%;
+  bottom: 40px;
+  box-shadow: 5px 5px 2px rgba(0, 0, 0, 0.3);
+}
+/* line 730, ../scss/style.scss */
+.popover .close {
+  position: fixed;
+  top: 55px;
+  left: 92%;
+}
+
+@media screen and (min-width: 700px) {
+  /* line 742, ../scss/style.scss */
+  .maincontentbox {
+    padding-top: 20px;
+  }
+
+  /* line 745, ../scss/style.scss */
+  header {
+    padding-bottom: 20px;
+  }
+  /* line 747, ../scss/style.scss */
+  header .headerlogo {
+    width: 60%;
+  }
+  /* line 753, ../scss/style.scss */
+  header .layrheader {
+    display: none;
+  }
+  /* line 756, ../scss/style.scss */
+  header .available {
+    margin-right: 5%;
+    width: 17%;
+  }
+  /* line 760, ../scss/style.scss */
+  header .available .availablebutton a {
+    width: 35%;
+  }
+
+  /* line 768, ../scss/style.scss */
+  header .layrheader {
+    padding-top: 5px;
+  }
+  /* line 771, ../scss/style.scss */
+  header h1 {
+    padding-bottom: 20px;
+  }
+
+  /* line 777, ../scss/style.scss */
+  .maincontentbox nav {
+    font-size: 1.2em;
+  }
+
+  /* line 784, ../scss/style.scss */
+  .loginbox {
+    max-width: 500px;
+    margin: 0 auto 40px auto;
+  }
+
+  /* line 790, ../scss/style.scss */
+  .loginbuttons .loginsubmit {
+    float: left;
+    width: 45%;
+  }
+  /* line 794, ../scss/style.scss */
+  .loginbuttons .loginforgotpassword {
+    float: right;
+    width: 45%;
+  }
+
+  /* line 802, ../scss/style.scss */
+  .profilepicture {
+    padding: 8%;
+    background: #464646;
+    border: none;
+    float: left;
+    width: 36%;
+    padding: 4%;
+  }
+  /* line 810, ../scss/style.scss */
+  .profilepicture .choosefile {
+    color: white;
+  }
+  /* line 813, ../scss/style.scss */
+  .profilepicture img {
+    max-width: 100%;
+    margin: 0 auto 20px auto;
+  }
+  /* line 817, ../scss/style.scss */
+  .profilepicture p {
+    color: white;
+  }
+
+  /* line 822, ../scss/style.scss */
+  .profileinput {
+    margin-top: 0;
+    float: right;
+    width: 50%;
+  }
+
+  /* line 828, ../scss/style.scss */
+  .portfoliolinks {
+    background: #464646;
+    color: white;
+    padding: 4%;
+    margin-top: 15px;
+  }
+
+  /* line 838, ../scss/style.scss */
+  .innercontent {
+    font-size: 1em;
+  }
+  /* line 840, ../scss/style.scss */
+  .innercontent h1 {
+    margin-top: 0;
+  }
+
+  /* line 845, ../scss/style.scss */
+  .currentcontent {
+    margin-top: 15px;
+  }
+
+  /* line 849, ../scss/style.scss */
+  .projectinfo {
+    float: left;
+    width: 70%;
+  }
+  /* line 852, ../scss/style.scss */
+  .projectinfo .table_heads {
+    float: left;
+    width: 40%;
+  }
+  /* line 856, ../scss/style.scss */
+  .projectinfo .table_heads li h3 {
+    margin-top: 0px;
+    margin-bottom: 16px;
+  }
+  /* line 862, ../scss/style.scss */
+  .projectinfo .table_data {
+    float: left;
+    width: 60%;
+    margin-bottom: 40px;
+  }
+  /* line 866, ../scss/style.scss */
+  .projectinfo .table_data li {
+    margin-top: 2px;
+    margin-bottom: 20px;
+  }
+
+  /* line 873, ../scss/style.scss */
+  .projectbuttons {
+    float: right;
+    width: 25%;
+    margin-bottom: 40px;
+  }
+  /* line 878, ../scss/style.scss */
+  .projectbuttons ul li {
+    display: block;
+    width: 100%;
+    margin-bottom: 15px;
+  }
+
+  /* line 886, ../scss/style.scss */
+  .overviewbuttons {
+    padding: 20px 0;
+  }
+  /* line 888, ../scss/style.scss */
+  .overviewbuttons label {
+    padding-top: 20px;
+  }
+  /* line 891, ../scss/style.scss */
+  .overviewbuttons a {
+    padding: 10px 4%;
+  }
+  /* line 894, ../scss/style.scss */
+  .overviewbuttons .bluebutton {
+    width: 24%;
+  }
+
+  /* line 900, ../scss/style.scss */
+  .messagereply .bluebutton {
+    width: 27%;
+  }
+
+  /* line 907, ../scss/style.scss */
+  .tablecontent {
+    font-size: 1em;
+  }
+  /* line 909, ../scss/style.scss */
+  .tablecontent th {
+    width: 28%;
+    text-align: left;
+    padding-right: 3%;
+  }
+  /* line 914, ../scss/style.scss */
+  .tablecontent td {
+    width: 19%;
+    padding-right: 3%;
+  }
+}

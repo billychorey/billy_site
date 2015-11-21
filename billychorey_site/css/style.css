@@ -1,0 +1,478 @@
+/***** CLEARFIX is applied to the parent of floated elements *************/
+/*************************************************************************/
+@import url(https://fonts.googleapis.com/css?family=Bitter:400,700|Archivo+Narrow:400,700);
+/* line 4, ../scss/style.scss */
+.clearfix {
+  zoom: 1;
+}
+/* line 6, ../scss/style.scss */
+.clearfix:before, .clearfix:after {
+  content: "";
+  display: table;
+}
+/* line 10, ../scss/style.scss */
+.clearfix:after {
+  clear: both;
+}
+
+/***** SITE STYLES *************/
+/**********************************/
+/* line 25, ../scss/style.scss */
+img {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+  border-radius: 3px;
+  padding: 0;
+}
+
+/* line 33, ../scss/style.scss */
+body {
+  font-family: 'Archivo Narrow', sans-serif;
+}
+
+/* line 36, ../scss/style.scss */
+a {
+  text-decoration: none;
+}
+
+/* line 39, ../scss/style.scss */
+p {
+  line-height: 1.5em;
+}
+
+/* line 42, ../scss/style.scss */
+.italic {
+  font-style: italic;
+}
+
+/* line 45, ../scss/style.scss */
+.serif {
+  font-family: "Bitter", serif;
+}
+
+/* line 48, ../scss/style.scss */
+.bold {
+  font-weight: bolder;
+}
+
+/* line 51, ../scss/style.scss */
+h1 {
+  font-size: 1.5em;
+}
+
+/* line 54, ../scss/style.scss */
+h2 {
+  font-size: 1.3em;
+}
+
+/* line 57, ../scss/style.scss */
+h3 {
+  font-size: 1.1em;
+  margin-bottom: 0;
+}
+
+/* line 61, ../scss/style.scss */
+h4 {
+  font-size: .9em;
+}
+
+/* line 64, ../scss/style.scss */
+p, li {
+  font-size: .75em;
+}
+
+/* line 67, ../scss/style.scss */
+header {
+  background-color: black;
+}
+/* line 69, ../scss/style.scss */
+header h1 {
+  font-family: "Bitter", serif;
+  font-size: 1.5em;
+  display: block;
+  color: white;
+  padding: 30px 0 30px 10%;
+}
+
+/* line 78, ../scss/style.scss */
+.wrapper {
+  width: 80%;
+  margin: 0 auto;
+  max-width: 950px;
+}
+
+/* line 86, ../scss/style.scss */
+.title h1 {
+  border: none;
+}
+
+/* line 90, ../scss/style.scss */
+.work {
+  display: block;
+  color: black;
+}
+
+/* line 94, ../scss/style.scss */
+.worklink {
+  margin-bottom: 30px;
+}
+
+/* line 101, ../scss/style.scss */
+h1 {
+  border-bottom: 1px solid black;
+}
+
+/* line 107, ../scss/style.scss */
+.layrlogin {
+  margin: 30px auto;
+}
+
+/* line 110, ../scss/style.scss */
+.wireframepic {
+  border: 1px solid black;
+  border-radius: 3px;
+}
+
+/* line 115, ../scss/style.scss */
+.mockups img {
+  margin-bottom: 30px;
+}
+
+/* line 119, ../scss/style.scss */
+.markup_pic {
+  margin: 30px auto;
+}
+
+/* line 123, ../scss/style.scss */
+.mockupimages {
+  margin-bottom: 60px;
+}
+/* line 126, ../scss/style.scss */
+.mockupimages .mockup {
+  display: inline-block;
+  width: 47%;
+  vertical-align: top;
+  margin-right: 2%;
+  max-height: 200px;
+}
+
+/* line 137, ../scss/style.scss */
+.link {
+  margin-bottom: 30px;
+}
+/* line 139, ../scss/style.scss */
+.link a {
+  padding: 3%;
+  color: white;
+  background-color: darkgray;
+  border-radius: 3px;
+  bottom: 30px;
+}
+/* line 145, ../scss/style.scss */
+.link a:hover {
+  background-color: lightgray;
+  color: darkgray;
+}
+
+/* line 153, ../scss/style.scss */
+footer {
+  background-color: black;
+  margin-top: 20px;
+}
+/* line 156, ../scss/style.scss */
+footer a {
+  font-family: "Bitter", serif;
+  font-size: 1em;
+  display: block;
+  color: white;
+  padding: 30px 0 30px 10%;
+}
+/* line 162, ../scss/style.scss */
+footer a:hover {
+  color: lightgray;
+}
+
+/* line 172, ../scss/style.scss */
+.wireframes {
+  margin-top: 30px;
+  border: 1px solid darkgray;
+  border-radius: 3px;
+  padding: 2%;
+}
+
+/* line 178, ../scss/style.scss */
+.thumbnails {
+  margin-top: 30px;
+  border: 1px solid darkgray;
+  border-radius: 3px;
+  padding: 2%;
+}
+
+/* line 184, ../scss/style.scss */
+.mockups {
+  margin-top: 30px;
+  border: 1px solid darkgray;
+  border-radius: 3px;
+  padding: 2%;
+}
+/* line 189, ../scss/style.scss */
+.mockups .mockup_content {
+  font-size: 1.2em;
+}
+
+/* line 193, ../scss/style.scss */
+.integrations {
+  margin-top: 30px;
+  background: lightgray;
+  color: black;
+  font-size: 1em;
+  font-weight: bolder;
+  border-radius: 3px;
+  padding: 2%;
+}
+/* line 201, ../scss/style.scss */
+.integrations h4 {
+  margin: 10px 0;
+}
+/* line 204, ../scss/style.scss */
+.integrations h3 {
+  margin-top: 0;
+  text-align: center;
+  text-decoration: underline;
+}
+/* line 209, ../scss/style.scss */
+.integrations ul {
+  margin-bottom: 0;
+}
+
+/* line 214, ../scss/style.scss */
+.markup {
+  margin-top: 30px;
+  border: 1px solid darkgray;
+  border-radius: 3px;
+  padding: 2%;
+}
+
+/* line 221, ../scss/style.scss */
+.mockupgallery {
+  margin-bottom: 20px;
+}
+/* line 223, ../scss/style.scss */
+.mockupgallery:last-child {
+  margin-bottom: 0;
+}
+
+@media screen and (min-width: 650px) {
+  /* line 232, ../scss/style.scss */
+  .worklink {
+    float: left;
+    width: 45%;
+  }
+
+  /* line 237, ../scss/style.scss */
+  .zverse {
+    margin-right: 5%;
+  }
+
+  /* line 242, ../scss/style.scss */
+  .layrlogin {
+    float: right;
+    width: 40%;
+    margin: 0 0 30px 30px;
+  }
+
+  /* line 247, ../scss/style.scss */
+  .discovery {
+    font-size: 1.2em;
+  }
+  /* line 249, ../scss/style.scss */
+  .discovery h3 {
+    font-weight: lighter;
+    font-style: italic;
+  }
+
+  /* line 255, ../scss/style.scss */
+  .process h1 {
+    border: none;
+  }
+
+  /* line 259, ../scss/style.scss */
+  .scope {
+    width: 30%;
+    background: lightgray;
+    color: black;
+    font-size: 1em;
+    font-weight: bolder;
+    border-radius: 3px;
+    padding: 2%;
+  }
+  /* line 268, ../scss/style.scss */
+  .scope h3 {
+    margin-top: 0;
+    text-decoration: underline;
+  }
+  /* line 272, ../scss/style.scss */
+  .scope ul {
+    margin-bottom: 0;
+  }
+
+  /* line 276, ../scss/style.scss */
+  .wireframes {
+    margin-top: 30px;
+    border: 1px solid darkgray;
+    border-radius: 3px;
+    padding: 2%;
+  }
+
+  /* line 282, ../scss/style.scss */
+  .wireframe_content {
+    font-size: 1.2em;
+    float: left;
+    width: 50%;
+  }
+  /* line 287, ../scss/style.scss */
+  .wireframe_content h4 {
+    margin-top: 0;
+  }
+
+  /* line 291, ../scss/style.scss */
+  .wireframepic {
+    float: right;
+    width: 40%;
+  }
+
+  /* line 296, ../scss/style.scss */
+  .thumbnails {
+    margin-top: 30px;
+    border: 1px solid darkgray;
+    border-radius: 3px;
+    padding: 2%;
+  }
+
+  /* line 302, ../scss/style.scss */
+  .thumbnail_content {
+    font-size: 1.2em;
+    float: left;
+    width: 50%;
+  }
+  /* line 306, ../scss/style.scss */
+  .thumbnail_content h4 {
+    margin-top: 0;
+  }
+
+  /* line 310, ../scss/style.scss */
+  .thumbnailpic {
+    float: right;
+    width: 40%;
+  }
+
+  /* line 314, ../scss/style.scss */
+  .mockups {
+    margin-top: 30px;
+    border: 1px solid darkgray;
+    border-radius: 3px;
+    padding: 2%;
+  }
+  /* line 319, ../scss/style.scss */
+  .mockups .mockup_content {
+    font-size: 1.2em;
+  }
+
+  /* line 323, ../scss/style.scss */
+  .mockup {
+    float: left;
+    width: 32%;
+    margin-right: 2%;
+  }
+  /* line 327, ../scss/style.scss */
+  .mockup:last-child {
+    margin-right: 0;
+  }
+
+  /* line 331, ../scss/style.scss */
+  .integrations {
+    margin-top: 30px;
+    background: lightgray;
+    color: black;
+    font-size: 1em;
+    font-weight: bolder;
+    border-radius: 3px;
+    padding: 2%;
+  }
+  /* line 339, ../scss/style.scss */
+  .integrations h4 {
+    margin: 10px 0;
+  }
+  /* line 342, ../scss/style.scss */
+  .integrations h3 {
+    margin-top: 0;
+    text-align: center;
+    text-decoration: underline;
+  }
+  /* line 347, ../scss/style.scss */
+  .integrations ul {
+    margin-bottom: 0;
+  }
+
+  /* line 352, ../scss/style.scss */
+  .googlefont {
+    float: left;
+    width: 48%;
+  }
+
+  /* line 357, ../scss/style.scss */
+  .responsive {
+    float: right;
+    width: 48%;
+  }
+
+  /* line 361, ../scss/style.scss */
+  .markup {
+    margin-top: 30px;
+    border: 1px solid darkgray;
+    border-radius: 3px;
+    padding: 2%;
+  }
+
+  /* line 368, ../scss/style.scss */
+  .markup_content {
+    font-size: 1.2em;
+    float: left;
+    width: 30%;
+  }
+  /* line 372, ../scss/style.scss */
+  .markup_content h3 {
+    margin-top: 0;
+  }
+
+  /* line 377, ../scss/style.scss */
+  .markup_pic {
+    float: right;
+    width: 65%;
+  }
+
+  /* line 382, ../scss/style.scss */
+  .mockupimages {
+    margin-top: 30px;
+    background: lightgray;
+    color: black;
+    font-size: 1em;
+    font-weight: bolder;
+    border-radius: 3px;
+    padding: 2%;
+  }
+  /* line 390, ../scss/style.scss */
+  .mockupimages h2 {
+    margin-top: 0;
+  }
+
+  /* line 394, ../scss/style.scss */
+  .mockupgallery {
+    margin-bottom: 20px;
+  }
+  /* line 396, ../scss/style.scss */
+  .mockupgallery:last-child {
+    margin-bottom: 0;
+  }
+}
